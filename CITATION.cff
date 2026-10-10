@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: "mcp-hrc-voting: MCP server for UN human-rights voting records"
+message: "If this connector supports your research workflow, please cite the software and the dataset. Cite the original UN documents separately."
+type: software
+authors:
+  - family-names: "Szoszkiewicz"
+    given-names: "Łukasz"
+    email: "l.szoszkiewicz@amu.edu.pl"
+    affiliation: "Adam Mickiewicz University, Poznań"
+    orcid: "https://orcid.org/0000-0001-6671-2893"
+abstract: "A Model Context Protocol server that lets AI assistants query how States voted at the UN Commission on Human Rights, the Human Rights Council and the General Assembly's Third Committee, from an offline snapshot of the HRC Voting dataset, with the dataset's methodological safeguards built in."
+keywords:
+  - "Model Context Protocol"
+  - "human rights"
+  - "United Nations"
+  - "Human Rights Council"
+  - "voting records"
+  - "research software"
+license: "PolyForm-Noncommercial-1.0.0"
+license-url: "https://polyformproject.org/licenses/noncommercial/1.0.0/"
+repository-code: "https://github.com/lszoszk/mcp-hrc-voting"
+version: "1.2.0"
+date-released: "2026-09-28"
+references:
+  - type: software
+    title: "UN Human Rights Voting Records — CHR · HRC · GA Third Committee"
+    authors:
+      - family-names: "Szoszkiewicz"
+        given-names: "Łukasz"
+    version: "1.2.0"
+    year: 2026
+    doi: "10.5281/zenodo.21281232"
+    publisher:
+      name: "Zenodo"

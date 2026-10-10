@@ -1,0 +1,47 @@
+{
+  "name": "mcp-hrc-voting",
+  "version": "1.2.0",
+  "description": "MCP server for UN human-rights voting records: how States voted at the Commission on Human Rights, the Human Rights Council and the General Assembly's Third Committee. Offline, with the dataset's safeguards built in.",
+  "type": "module",
+  "bin": {
+    "mcp-hrc-voting": "src/index.js"
+  },
+  "files": [
+    "src",
+    "data",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "start:http": "node src/http.js",
+    "sync-data": "node scripts/sync-data.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "express": "^4.21.2",
+    "zod": "^3.23.8"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "united-nations",
+    "human-rights",
+    "human-rights-council",
+    "voting-records",
+    "roll-call-votes"
+  ],
+  "author": "Łukasz Szoszkiewicz",
+  "homepage": "https://github.com/lszoszk/mcp-hrc-voting",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lszoszk/mcp-hrc-voting.git"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

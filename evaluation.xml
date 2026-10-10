@@ -1,0 +1,44 @@
+<evaluation>
+  <!-- Ten read-only questions for mcp-hrc-voting. Each needs several tool calls, has one short answer and is stable
+       for dataset v1.2.0 (answers were computed from the bundled snapshot). Re-derive them after a data sync. -->
+  <qa_pair>
+    <question>Five amendments to draft texts were adopted by the Human Rights Council between 2020 and 2024. Which one passed with the widest margin of Yes votes over No votes? Give its UN symbol.</question>
+    <answer>A/HRC/52/L.59</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Poland cast recorded votes in the Human Rights Council in 2020, 2021 and 2022. Counting resolutions and decisions only (not amendments), what percentage of those votes were Yes? Give the whole number.</question>
+    <answer>64</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Among States that shared at least 60 recorded votes with Hungary in the Council between 2006 and 2026 (amendments excluded), which one voted the same way as Hungary most often?</question>
+    <answer>Poland</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Among the years 2018 to 2026, in which year was the share of Human Rights Council texts adopted without a vote lowest (considered texts only, amendments excluded)? Give the year.</question>
+    <answer>2021</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>The Council adopted a resolution on the mandate of the Independent Expert on protection against violence and discrimination based on sexual orientation and gender identity on 7 July 2022, symbol A/HRC/RES/50/10. What was the tally, as Yes-No-Abstain?</question>
+    <answer>23-17-7</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>According to the catalogue, how many amendments to draft texts were withdrawn at the Human Rights Council in 2022?</question>
+    <answer>43</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Five Council resolutions on the death penalty were decided by recorded vote between 2015 and 2024. Which of them received the most No votes, and how many? Answer as "symbol, number".</question>
+    <answer>A/HRC/RES/42/24, 14</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which States voted No on both A/HRC/RES/30/5 (2015) and A/HRC/RES/48/9 (2021), the Council's resolutions on the question of the death penalty? List them alphabetically, separated by commas.</question>
+    <answer>Bangladesh, China, India, Japan, Pakistan</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Cuba and the United States both voted on resolutions and decisions of the Council between 2006 and 2026. On how many of their shared recorded votes did one vote Yes and the other No?</question>
+    <answer>265</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What is the numeric record id, at the end of its OHCHR Library record URL, of the Council's resolution A/HRC/RES/48/1 on the situation of human rights in Afghanistan?</question>
+    <answer>30044</answer>
+  </qa_pair>
+</evaluation>
