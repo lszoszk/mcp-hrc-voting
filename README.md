@@ -48,25 +48,18 @@ There is no hosted endpoint yet; run it locally (below) or host the HTTP entry y
 
 ## Install
 
-Requires Node.js ≥ 18.
-
-```bash
-git clone https://github.com/lszoszk/mcp-hrc-voting
-cd mcp-hrc-voting
-npm install
-npm test        # 15 tests, including the protocol end to end and the ten evaluation answers
-```
+Requires Node.js ≥ 18. No clone needed: the client can fetch and run the server straight from GitHub.
 
 ### Claude Desktop
 
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json` and restart the app:
 
 ```json
 {
   "mcpServers": {
     "hrc-voting": {
-      "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/mcp-hrc-voting/src/index.js"]
+      "command": "npx",
+      "args": ["-y", "github:lszoszk/mcp-hrc-voting"]
     }
   }
 }
@@ -75,12 +68,22 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add-json -s user hrc-voting \
-  '{"command":"node","args":["/ABSOLUTE/PATH/TO/mcp-hrc-voting/src/index.js"]}'
+claude mcp add --scope user hrc-voting -- npx -y github:lszoszk/mcp-hrc-voting
 ```
 
-Restart the client; the nine tools appear under the 🔌 menu. A stdio server prints one line to stderr when ready
-(`mcp-hrc-voting 1.2.0 (stdio) ready · dataset v1.2.0 …`).
+The nine tools appear under the 🔌 menu. A stdio server prints one line to stderr when ready
+(`mcp-hrc-voting 1.2.0 (stdio) ready · dataset v1.2.0 …`). The first start takes a few seconds while npm fetches the package.
+
+### From a clone (development)
+
+```bash
+git clone https://github.com/lszoszk/mcp-hrc-voting
+cd mcp-hrc-voting
+npm install
+npm test        # 15 tests, including the protocol end to end and the ten evaluation answers
+```
+
+and point the client at the file instead: `"command": "node", "args": ["/ABSOLUTE/PATH/TO/mcp-hrc-voting/src/index.js"]`.
 
 ### Remote / HTTP
 
